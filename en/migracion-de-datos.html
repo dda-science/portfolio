@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data migration · Dennise Domínguez Adrover</title>
+<meta name="description" content="Moving data from one system to another without overwriting what was already there.">
+<link rel="icon" href="../medios/icono.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dennise Domínguez Adrover">
+<meta property="og:title" content="Data migration · Dennise Domínguez Adrover">
+<meta property="og:description" content="Moving data from one system to another without overwriting what was already there.">
+<meta property="og:url" content="https://dda-science.github.io/portfolio/en/migracion-de-datos.html">
+<meta property="og:image" content="https://dda-science.github.io/portfolio/medios/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../estilo.css?v=24">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Home"><a class="on" href="index.html">Projects</a><a href="sobre-mi.html">About me</a><a href="contacto.html">Contact</a><a class="idioma" href="../migracion-de-datos.html" hreflang="es" lang="es">ES</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Project 7 · Data migration</span><a href="index.html">All projects</a></p>
+    <h1>Moving data from one system to another without overwriting what was already there.</h1>
+    <p class="acl">Fields, screens and records had to be moved into a system that was already in use. The tool first does a trial run and shows what would change.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="21" aria-label="Demo: a trial run shows what would change in the target, and then it is applied">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">Where the data comes from</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="2.5" y="4" width="13" height="4" rx="1"/><rect x="2.5" y="10" width="13" height="4" rx="1"/></svg></span><span><b>Source system</b><small>What has to be moved</small></span></div>
+      <div class="cuerpo">
+        <div class="lin"><span class="eti">Fields</span></div>
+        <div class="lin"><span class="eti">Sections</span></div>
+        <div class="lin"><span class="eti">Record layouts</span></div>
+        <div class="lin"><span class="eti">Records</span></div>
+      </div>
+      <div class="barra-pie"><span class="btn" data-en="1-2.2">Trial run</span><span class="btn" data-en="10-11.2">Apply</span></div>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">Where it goes</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="2.5" y="4" width="13" height="4" rx="1"/><rect x="2.5" y="10" width="13" height="4" rx="1"/></svg></span><span><b>Target system</b><small>Already in use</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-1.5">Untouched</span><span class="pild viva" data-en="1.5-10">Trial run</span><span class="pild viva" data-en="10-18.5">Applying</span><span class="pild hecha" data-en="18.5">Done</span></span></div>
+      <div class="cuerpo">
+        <div class="lin"><span class="eti">What was already there</span><span class="der">Left untouched</span></div>
+        <div class="lin fant ap" data-en="2.5" data-en-2="11.5" data-clase-2="firme"><span class="eti">New fields</span><span class="der relevo"><span data-en="0-11.5">Would be created</span><span data-en="11.5">Created</span></span></div>
+        <div class="lin fant ap" data-en="4" data-en-2="13" data-clase-2="firme"><span class="eti">Sections</span><span class="der relevo"><span data-en="0-13">Would be created</span><span data-en="13">Created</span></span></div>
+        <div class="lin fant ap" data-en="5.5" data-en-2="14.5" data-clase-2="firme"><span class="eti">Record layouts</span><span class="der relevo"><span data-en="0-14.5">Would be adjusted</span><span data-en="14.5">Adjusted</span></span></div>
+        <div class="lin fant ap" data-en="7" data-en-2="16" data-clase-2="firme"><span class="eti">Records</span><span class="der relevo"><span data-en="0-16">Would be moved</span><span data-en="16">Migrated</span></span></div>
+      </div>
+      <div class="pies">
+        <p class="aviso" data-en="8.4-10"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Trial run finished. Nothing has been written.</p>
+        <p class="aviso" data-en="18.5"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Applied. Each record is still linked to its related records.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pause the demo">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pause</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Replay
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Demo progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">What changes</p>
+<div class="dos sin"><div class="antes"><h2>With the usual method</h2><ul><li>The usual method overwrites what is in the target.</li><li>It can only be used three times.</li></ul></div><div class="ahora"><h2>With this tool</h2><ul><li>First a trial run that shows what would change, without touching anything.</li><li>It only writes when told to.</li><li>Each record arrives linked to its related records.</li></ul></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">What I did</p>
+    <ol class="hice"><li>I ruled out the usual method because it overwrote what was in the target.</li><li>I built a tool that does a trial run first and only writes when told to.</li><li>I documented every decision and every step applied.</li></ol>
+    <div class="fichas-p">
+      <p><b>Built with</b>Python · Zoho CRM</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Other projects">
+    <a href="seminarios-en-linea.html"><span>Previous</span><b>Online seminars</b></a>
+    <a class="idx" href="index.html"><span>Index</span><b>All projects</b></a>
+    <a href="documentos-revisados.html"><span>Next</span><b>AI document handling</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automation and AI · Remote</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Email</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="../pasos.js?v=24"></script>
+</body>
+</html>

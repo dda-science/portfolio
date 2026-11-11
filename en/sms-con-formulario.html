@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMS with a personal form · Dennise Domínguez Adrover</title>
+<meta name="description" content="A text message with a personal link, and the client completes what is missing on their own.">
+<link rel="icon" href="../medios/icono.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dennise Domínguez Adrover">
+<meta property="og:title" content="SMS with a personal form · Dennise Domínguez Adrover">
+<meta property="og:description" content="A text message with a personal link, and the client completes what is missing on their own.">
+<meta property="og:url" content="https://dda-science.github.io/portfolio/en/sms-con-formulario.html">
+<meta property="og:image" content="https://dda-science.github.io/portfolio/medios/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../estilo.css?v=24">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Home"><a class="on" href="index.html">Projects</a><a href="sobre-mi.html">About me</a><a href="contacto.html">Contact</a><a class="idioma" href="../sms-con-formulario.html" hreflang="es" lang="es">ES</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Project 11 · SMS with a personal form</span><a href="index.html">All projects</a></p>
+    <h1>A text message with a personal link, and the client completes what is missing on their own.</h1>
+    <p class="acl">The client gets an SMS with a link that is theirs alone. When they open it, they find a form that already contains what was known about them, and they only fill in what is missing. It is used to get back in touch with people who could not be reached, to ask for missing details or to update ones that have changed.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="21" aria-label="Demo: four panels, from the missing detail to the complete record">
+<div class="tira">
+  <div class="cuadro" data-en="0.5" data-en-2="0.5-5" data-clase-2="viva">
+    <h3><i>1</i>Client details missing</h3>
+    <div class="esc">
+      <svg class="dib gr" viewBox="0 0 64 64" aria-hidden="true"><rect x="20" y="8" width="20" height="48" rx="5"/><path d="M27 15h6"/><path class="a" d="M47 24l9 9M56 24l-9 9"/></svg>
+      <span class="pild ap" data-en="2">Pending details</span>
+    </div>
+  </div>
+  <div class="cuadro" data-en="5" data-en-2="5-10" data-clase-2="viva">
+    <h3><i>2</i>Gets a message</h3>
+    <div class="esc">
+      <p class="sms ap" data-en="6">Hello, Marta. To continue with your request we need one more detail. You can complete it here: <u>personal link</u></p>
+      <p class="demo-tit ap" data-en="7.6">A single short message. It only goes out when it is allowed to be sent.</p>
+    </div>
+  </div>
+  <div class="cuadro" data-en="10" data-en-2="10-16.5" data-clase-2="viva">
+    <h3><i>3</i>The form already contains what was known</h3>
+    <div class="esc">
+      <dl class="mini-f">
+        <div><dt>Name</dt><dd><span class="val on">Marta Ruiz</span></dd></div>
+        <div><dt>Interested in</dt><dd><span class="val on">Maintenance</span></dd></div>
+        <div><dt>When</dt><dd><span class="val nuevo" data-en="13.5">Next month</span><span class="hueco"></span></dd></div>
+      </dl>
+      <span class="btn" data-en="15-16.2">Send</span>
+    </div>
+  </div>
+  <div class="cuadro" data-en="16.5" data-en-2="16.5" data-clase-2="viva">
+    <h3><i>4</i>The record completes itself</h3>
+    <div class="esc">
+      <p style="display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:14.5px"><span class="ico" aria-hidden="true">MR</span><b style="font-weight:600">Marta Ruiz</b></p>
+      <span class="relevo izq"><span class="pild" data-en="0-18">Pending details</span><span class="pild hecha" data-en="18">Details complete</span></span>
+      <dl class="mini-f"><div><dt>When</dt><dd><span class="val nuevo" data-en="18.6">Next month</span><span class="hueco"></span></dd></div></dl>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pause the demo">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pause</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Replay
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Demo progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">The real tool</p>
+    <div class="caps cuadricula"><figure class="cap"><a href="../medios/cap-reenganche-sms.webp" data-ampliar aria-label="Enlarge the screenshot"><img src="../medios/cap-reenganche-sms.webp" width="700" height="290" alt="The message, as it arrives on the phone." loading="lazy"></a><figcaption>The message, as it arrives on the phone.</figcaption></figure><figure class="cap"><a href="../medios/cap-reenganche-formulario.webp" data-ampliar aria-label="Enlarge the screenshot"><img src="../medios/cap-reenganche-formulario.webp" width="1448" height="637" alt="What opens when the link is tapped: a short form, one question per screen, that already knows who the client is and saves the answers in their record." loading="lazy"></a><figcaption>What opens when the link is tapped: a short form, one question per screen, that already knows who the client is and saves the answers in their record.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">What changes</p>
+<div class="quien"><p class="antes-l">Before, every missing detail had to be requested by hand, client by client, and many requests were left half-finished.</p><div class="pers"><div><h2>For the client</h2><p>They get a short message with a link. The form already contains their details and they only complete what is missing.</p></div><div><h2>For the team</h2><p>The record is updated with what the client fills in. The message only goes out when it is allowed to be sent.</p></div></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">What I did</p>
+    <ol class="hice"><li>I designed the journey: when the message goes out, what it says and where it leads.</li><li>I adjusted the text so it fits in a single message.</li><li>I made the link personal, so it cannot be guessed or altered.</li><li>I set up a dashboard to track the results and wrote the maintenance manual.</li></ol>
+    <div class="fichas-p">
+      <p><b>Built with</b>Twilio · Zoho CRM · Cloudflare Workers</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Other projects">
+    <a href="facturacion.html"><span>Previous</span><b>Invoice generation</b></a>
+    <a class="idx" href="index.html"><span>Index</span><b>All projects</b></a>
+    <a href="avisos-de-fallos.html"><span>Next</span><b>Failure alerts</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automation and AI · Remote</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Email</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="../pasos.js?v=24"></script>
+</body>
+</html>
