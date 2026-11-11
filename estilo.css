@@ -647,3 +647,28 @@ b.ok { font-weight:600; color:var(--acc); }
 .fichas-p .res { display:block; margin:0 0 22px; padding:18px 22px; background:var(--tint); border-left:3px solid var(--acc); font-family:var(--serif); font-size:20px; line-height:1.45; color:var(--ink); max-width:46rem; }
 .fichas-p .res b { display:block; font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--acc); margin:0 0 6px; }
 .cap img { width:100%; height:auto; }
+
+/* Anterior / siguiente, más visibles */
+.paso { border-top:0; gap:16px; align-items:stretch; }
+.paso > a:first-child, .paso > a:last-child { padding:20px 24px 22px; background:var(--tint); border:1px solid transparent; border-radius:6px; transition:background .18s, border-color .18s; }
+.paso > a:first-child:hover, .paso > a:last-child:hover { background:var(--blanco); border-color:var(--acc); }
+.paso > a:last-child { background:var(--ink); }
+.paso > a:last-child span { color:#d9d2c8; }
+.paso > a:last-child b { color:var(--paper); }
+.paso > a:last-child:hover { background:var(--acc); border-color:var(--acc); }
+.paso > a:last-child:hover b { color:var(--paper); }
+.paso > a:first-child b::before { content:"← "; color:var(--acc); }
+.paso > a:last-child b::after { content:" →"; }
+.paso .idx { align-self:center; padding-top:0; }
+.paso .idx b { text-decoration:underline; text-decoration-color:var(--acc); text-underline-offset:4px; }
+@media (max-width:900px) { .paso > a:first-child, .paso > a:last-child { padding:16px 16px 18px; } }
+main { padding-bottom:72px; }
+
+/* Destacados más compactos */
+.tarj.dest { grid-template-columns:minmax(0,300px) minmax(0,1fr); gap:32px; padding:16px; }
+.tarj.dest .tapa { aspect-ratio:16/10; }
+.tarj.dest h3 { font-size:clamp(23px,2vw,28px); }
+.tarj.dest p:not(.rot) { font-size:17px; margin-top:6px; }
+.tarj.dest .ver { margin-top:12px; font-size:14px; }
+.dests { gap:18px; }
+@media (max-width:900px) { .tarj.dest { grid-template-columns:1fr; } .tarj.dest .tapa { max-height:180px; } }
