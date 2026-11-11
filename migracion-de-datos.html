@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migración de datos · Dennise Domínguez Adrover</title>
+<meta name="description" content="Llevar los datos de un programa a otro sin pisar lo que ya había.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 7 · Migración de datos</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Llevar los datos de un programa a otro sin pisar lo que ya había.</h1>
+    <p class="acl">Había que llevar campos, pantallas y registros a un programa que ya estaba en uso. La herramienta hace primero un ensayo y enseña qué cambiaría.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="21" aria-label="Demostración: un ensayo enseña lo que cambiaría en el destino y después se aplica">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">De dónde salen los datos</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="2.5" y="4" width="13" height="4" rx="1"/><rect x="2.5" y="10" width="13" height="4" rx="1"/></svg></span><span><b>Programa de origen</b><small>Lo que hay que llevar</small></span></div>
+      <div class="cuerpo">
+        <div class="lin"><span class="eti">Campos</span></div>
+        <div class="lin"><span class="eti">Secciones</span></div>
+        <div class="lin"><span class="eti">Diseño de las fichas</span></div>
+        <div class="lin"><span class="eti">Registros</span></div>
+      </div>
+      <div class="barra-pie"><span class="btn" data-en="1-2.2">Ensayar</span><span class="btn" data-en="10-11.2">Aplicar</span></div>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">A dónde llegan</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="2.5" y="4" width="13" height="4" rx="1"/><rect x="2.5" y="10" width="13" height="4" rx="1"/></svg></span><span><b>Programa de destino</b><small>Ya estaba en uso</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-1.5">Sin tocar</span><span class="pild viva" data-en="1.5-10">Ensayo</span><span class="pild viva" data-en="10-18.5">Aplicando</span><span class="pild hecha" data-en="18.5">Hecho</span></span></div>
+      <div class="cuerpo">
+        <div class="lin"><span class="eti">Lo que ya había</span><span class="der">No se toca</span></div>
+        <div class="lin fant ap" data-en="2.5" data-en-2="11.5" data-clase-2="firme"><span class="eti">Campos nuevos</span><span class="der relevo"><span data-en="0-11.5">Se crearían</span><span data-en="11.5">Creados</span></span></div>
+        <div class="lin fant ap" data-en="4" data-en-2="13" data-clase-2="firme"><span class="eti">Secciones</span><span class="der relevo"><span data-en="0-13">Se crearían</span><span data-en="13">Creadas</span></span></div>
+        <div class="lin fant ap" data-en="5.5" data-en-2="14.5" data-clase-2="firme"><span class="eti">Diseño de las fichas</span><span class="der relevo"><span data-en="0-14.5">Se ajustaría</span><span data-en="14.5">Ajustado</span></span></div>
+        <div class="lin fant ap" data-en="7" data-en-2="16" data-clase-2="firme"><span class="eti">Registros</span><span class="der relevo"><span data-en="0-16">Se llevarían</span><span data-en="16">Migrados</span></span></div>
+      </div>
+      <div class="pies">
+        <p class="aviso" data-en="8.4-10"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Ensayo terminado. No se ha escrito nada.</p>
+        <p class="aviso" data-en="18.5"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Aplicado. Cada registro sigue enlazado con los suyos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué cambia</p>
+<div class="dos sin"><div class="antes"><h2>Con la vía habitual</h2><ul><li>La vía habitual sobrescribe lo que hay en el destino.</li><li>Solo se puede usar tres veces.</li></ul></div><div class="ahora"><h2>Con esta herramienta</h2><ul><li>Primero un ensayo que enseña lo que cambiaría, sin tocar nada.</li><li>Solo escribe cuando se le da la orden.</li><li>Cada registro llega enlazado con los suyos.</li></ul></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Descarté la vía habitual porque sobrescribía lo que había en el destino.</li><li>Construí una herramienta que primero ensaya y solo escribe cuando se le ordena.</li><li>Dejé por escrito cada decisión y cada paso aplicado.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Python · Zoho CRM</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="seminarios-en-linea.html"><span>Anterior</span><b>Seminarios en línea</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="documentos-revisados.html"><span>Siguiente</span><b>Gestión de documentos con IA</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente de chat · Dennise Domínguez Adrover</title>
+<meta name="description" content="Un chat que entiende lo que el cliente escribe, aunque lo escriba a su manera.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 2 · Asistente de chat</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Un chat que entiende lo que el cliente escribe, aunque lo escriba a su manera.</h1>
+    <p class="acl">Recoge por mensaje los datos que hacen falta para empezar, en el chat de la web, en WhatsApp o en el canal que use la empresa. El cliente contesta como quiere y cuando quiere, y cada dato queda apuntado limpio en su ficha.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="24.5" aria-label="Demostración: un chat con el cliente y los datos que quedan apuntados">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">El chat con el cliente</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><path d="M3 3.5h12v8.5H8l-3.5 3v-3H3z"/></svg></span><span><b>Marta Ruiz</b><small>Chat por mensajería</small></span></div>
+      <div class="charla msj">
+        <div class="turno a" data-en="1"><div><p class="boc"><small>Asistente</small>Hola, Marta. Para empezar con su solicitud necesito tres datos. ¿Se los pregunto por aquí?</p></div></div>
+        <div class="turno c" data-en="3.6"><div><p class="boc"><small>Marta</small>vale</p></div></div>
+        <div class="turno a" data-en="5"><div><p class="boc"><small>Asistente</small>¿Qué presupuesto tiene, más o menos?</p></div></div>
+        <div class="turno c" data-en="7.4"><div><p class="boc"><small>Marta</small>unos 20 mil</p></div></div>
+        <div class="turno a" data-en="10.6"><div><p class="boc"><small>Asistente</small>¿En qué provincia?</p></div></div>
+        <div class="turno c" data-en="12.8"><div><p class="boc"><small>Marta</small>soy de valencia capital</p></div></div>
+        <div class="turno a" data-en="16"><div><p class="boc"><small>Asistente</small>¿Para cuándo lo necesita?</p></div></div>
+        <div class="turno c" data-en="18.2"><div><p class="boc"><small>Marta</small>cuanto antes, este mes si puede ser</p></div></div>
+        <div class="turno a" data-en="21.2"><div><p class="boc"><small>Asistente</small>Gracias. El equipo ya tiene sus datos.</p></div></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">Lo que entiende y apunta</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true">MR</span><span><b>Marta Ruiz</b><small>Ficha de cliente</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-9">Sin datos</span><span class="pild viva" data-en="9-19.8">Completando</span><span class="pild hecha" data-en="19.8">Datos completos</span></span></div>
+      <div class="trad">
+        <div><span class="dt">Presupuesto</span><p class="par"><span class="cru ap" data-en="7.4">«unos 20 mil»</span><span class="fl ap" data-en="9" aria-hidden="true">→</span><span class="lim val nuevo" data-en="9">20.000 €</span></p></div>
+        <div><span class="dt">Provincia</span><p class="par"><span class="cru ap" data-en="12.8">«soy de valencia capital»</span><span class="fl ap" data-en="14.4" aria-hidden="true">→</span><span class="lim val nuevo" data-en="14.4">Valencia</span></p></div>
+        <div><span class="dt">Para cuándo</span><p class="par"><span class="cru ap" data-en="18.2">«cuanto antes, este mes si puede ser»</span><span class="fl ap" data-en="19.8" aria-hidden="true">→</span><span class="lim val nuevo" data-en="19.8">Cuanto antes</span></p></div>
+      </div>
+      <p class="aviso" data-en="22.4"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Guardado en la ficha. Si el guardado falla, el equipo recibe una tarea con las respuestas.</p>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">La conversación real</p>
+    <div class="caps cuadricula"><figure class="cap"><a href="medios/vivo-chat-1-inicio.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-chat-1-inicio.webp" width="1288" height="802" alt="El chat saluda y pregunta si puede empezar. Es una conversación de prueba." loading="lazy"></a><figcaption>El chat saluda y pregunta si puede empezar. Es una conversación de prueba.</figcaption></figure><figure class="cap"><a href="medios/vivo-chat-2-opciones.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-chat-2-opciones.webp" width="1288" height="775" alt="Se puede contestar pulsando un botón." loading="lazy"></a><figcaption>Se puede contestar pulsando un botón.</figcaption></figure><figure class="cap"><a href="medios/vivo-chat-3-preguntas.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-chat-3-preguntas.webp" width="1288" height="890" alt="Una pregunta cada vez, con las opciones a la vista." loading="lazy"></a><figcaption>Una pregunta cada vez, con las opciones a la vista.</figcaption></figure><figure class="cap destacada"><a href="medios/vivo-chat-4-respuestas-libres.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-chat-4-respuestas-libres.webp" width="1288" height="903" alt="Aquí la persona contesta con sus palabras: «450mil euros», «170min». El chat lo entiende y sigue." loading="lazy"></a><figcaption>Aquí la persona contesta con sus palabras: «450mil euros», «170min». El chat lo entiende y sigue.</figcaption></figure><figure class="cap"><a href="medios/vivo-chat-5-panel.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-chat-5-panel.webp" width="1568" height="735" alt="El panel desde el que el equipo sigue cada conversación. Son envíos de prueba." loading="lazy"></a><figcaption>El panel desde el que el equipo sigue cada conversación. Son envíos de prueba.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué cambia</p>
+<div class="quien"><p class="antes-l">Antes, alguien del equipo tenía que pedir los datos uno a uno y apuntarlos a mano.</p><div class="pers"><div><h2>Para el cliente</h2><p>Contesta por mensaje, con sus palabras y cuando le viene bien.</p></div><div><h2>Para el equipo</h2><p>Recibe los datos ya ordenados en la ficha. Si algo falla al guardarlos, le llega una tarea con todas las respuestas.</p></div></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Decidí qué se pregunta y qué respuestas se dan por buenas en cada pregunta.</li><li>Hice que primero se apliquen reglas sencillas y que la IA solo entre cuando esas reglas no bastan.</li><li>Preparé una salida para los fallos: si los datos no se guardan, el equipo recibe una tarea con todo lo contestado.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Zoho SalesIQ · WhatsApp Business · Cloudflare Workers · Claude · Python</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="agente-de-voz.html"><span>Anterior</span><b>Asistente de voz</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="asistente-de-reservas.html"><span>Siguiente</span><b>Asistente de reservas</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

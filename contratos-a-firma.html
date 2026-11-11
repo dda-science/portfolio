@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generación de contratos · Dennise Domínguez Adrover</title>
+<meta name="description" content="Un botón en la ficha del cliente: el contrato se rellena solo con sus datos y sale a firma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 9 · Generación de contratos</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Un botón en la ficha del cliente: el contrato se rellena solo con sus datos y sale a firma.</h1>
+    <p class="acl">Cada hueco de la plantilla está enlazado con un dato de la ficha: nombre, documento, dirección, importe. La persona del equipo pulsa el botón, elige la plantilla, revisa lo que va a salir y lo envía a firmar. Es rápido y no hay que copiar nada a mano.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="22.5" aria-label="Demostración: un contrato se rellena, se revisa, se envía y vuelve firmado">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">Lo que hace la persona del equipo</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true">MR</span><span><b>Marta Ruiz</b><small>Enviar contrato a firma</small></span></div>
+      <div class="opcs"><span class="opc" data-en="1.5">Contrato de servicio</span><span class="opc">Contrato en inglés</span></div>
+      <dl class="campos">
+        <div><dt>Nombre</dt><dd><span class="val nuevo" data-en="3">Marta Ruiz</span><span class="hueco"></span></dd></div>
+        <div><dt>Documento</dt><dd><span class="val nuevo" data-en="3.8">12345678Z</span><span class="hueco"></span></dd></div>
+        <div><dt>Importe</dt><dd><span class="val nuevo" data-en="4.6">300 €</span><span class="hueco"></span></dd></div>
+      </dl>
+      <div class="barra-pie"><span style="display:flex;align-items:center;gap:9px;color:var(--ink)"><span class="cas" data-en="11"><svg class="dib" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 6.3l2.3 2.3 4.7-5"/></svg></span>He revisado el contrato</span><span class="btn" data-en="13-14.2">Enviar a firma</span></div>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">El contrato, que se rellena solo</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><path d="M4.5 2h6l3 3v11h-9z"/><path d="M10.5 2v3h3"/></svg></span><span><b>Contrato</b><small>Plantilla con los datos de la ficha</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-13.5">Borrador</span><span class="pild viva" data-en="13.5-18.5">Enviado a firma</span><span class="pild hecha" data-en="18.5">Firmado</span></span></div>
+      <div class="mesa"><div class="papel">
+        <h4>Contrato de servicio</h4>
+        <div class="rg"></div>
+        <p class="dato"><span>Nombre</span><span class="celda"><span class="val nuevo" data-en="5.5">Marta Ruiz</span><span class="hueco"></span></span></p>
+        <p class="dato"><span>Documento</span><span class="celda"><span class="val nuevo" data-en="7">12345678Z</span><span class="hueco"></span></span></p>
+        <p class="dato"><span>Importe</span><span class="celda"><span class="val nuevo" data-en="8.5">Trescientos euros</span><span class="hueco"></span></span></p>
+        <div class="rg" style="width:72%"></div>
+        <div class="firma" data-en="17"><svg class="dib" viewBox="0 0 150 44" aria-hidden="true"><path class="raya" d="M2 38h146"/><path class="garabato" pathLength="1" d="M8 32c6-22 15-24 15-7s8 11 15-4 8 15 16 6 10-11 27-4 18 2 34-6"/></svg><small>Firma del cliente</small></div>
+      </div></div>
+      <p class="aviso" data-en="20"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Si nadie firma a tiempo, la ficha lo marca como caducado.</p>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">La herramienta real</p>
+    <div class="caps cuadricula"><figure class="cap"><a href="medios/cap-contratos-seleccion.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-contratos-seleccion.webp" width="1800" height="1280" alt="El primer paso. Se elige qué contrato se quiere y los datos del cliente ya vienen rellenos desde su ficha, con el importe también en letra." loading="lazy"></a><figcaption>El primer paso. Se elige qué contrato se quiere y los datos del cliente ya vienen rellenos desde su ficha, con el importe también en letra.</figcaption></figure><figure class="cap"><a href="medios/cap-contratos-revision.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-contratos-revision.webp" width="1600" height="768" alt="El segundo paso. Se revisa lo que va a salir, y no se puede enviar a firma sin marcar la casilla." loading="lazy"></a><figcaption>El segundo paso. Se revisa lo que va a salir, y no se puede enviar a firma sin marcar la casilla.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Antes y ahora</p>
+<div class="dos sin"><div class="antes"><h2>Antes</h2><ul><li>Cada contrato se preparaba a mano, copiando los datos del cliente uno a uno.</li><li>Muchos caducaban sin firmar.</li><li>La ficha no mostraba que había caducado.</li></ul></div><div class="ahora"><h2>Ahora</h2><ul><li>Se elige la plantilla y se rellena sola, con el importe también en letra.</li><li>Hay una pantalla de revisión antes de enviar.</li><li>Si caduca sin firmar, la ficha lo dice.</li></ul></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Diseñé la pantalla: elegir plantilla, revisar y enviar.</li><li>Enlacé cada hueco de las plantillas con su dato en la ficha del cliente.</li><li>Añadí el paso de revisión obligatorio antes de enviar.</li><li>Hice visible en la ficha cuándo un contrato caduca sin firmar.</li><li>Escribí la guía para dar de alta plantillas nuevas.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Zoho CRM · Zoho Sign</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="documentos-revisados.html"><span>Anterior</span><b>Gestión de documentos con IA</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="facturacion.html"><span>Siguiente</span><b>Generación de facturas</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

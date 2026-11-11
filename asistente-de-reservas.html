@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente de reservas · Dennise Domínguez Adrover</title>
+<meta name="description" content="Un asistente que contesta por chat si hay sitio, con su precio, y da el enlace para reservar en el momento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 3 · Asistente de reservas</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Un asistente que contesta por chat si hay sitio, con su precio, y da el enlace para reservar en el momento.</h1>
+    <p class="acl">Lo hice para un grupo de alojamientos. Consulta la disponibilidad en su programa de reservas, contesta con las habitaciones libres y su precio, y envía el enlace para reservar con esas fechas ya puestas. Si no hay hueco, propone otras fechas. Guarda la solicitud y pasa la conversación a una persona cuando hace falta.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="21" aria-label="Demostración: el cliente pregunta por unas fechas y el asistente consulta el calendario y propone otras">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">Lo que pregunta el cliente</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><path d="M3 3.5h12v8.5H8l-3.5 3v-3H3z"/></svg></span><span><b>Chat de la web</b><small>Marta Ruiz</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-9.5">Consulta</span><span class="pild viva" data-en="9.5-18.6">Propuesta</span><span class="pild hecha" data-en="18.6">Solicitud guardada</span></span></div>
+      <div class="charla msj">
+        <div class="turno c" data-en="1"><div><p class="boc"><small>Marta</small>¿Tenéis sitio del 12 al 14 para dos personas?</p></div></div>
+        <div class="turno a" data-en="7"><div><p class="boc"><small>Asistente</small>Esas noches están completas. Tengo libre del 15 al 17. ¿Le encaja?</p></div></div>
+        <div class="turno c" data-en="13"><div><p class="boc"><small>Marta</small>Sí, del 15 al 17.</p></div></div>
+        <div class="turno a" data-en="16"><div><p class="boc"><small>Asistente</small>Hecho. Le paso con una persona del equipo para confirmarla.</p></div></div>
+      </div>
+      <p class="aviso" data-en="18.6"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Solicitud guardada en la ficha del cliente.</p>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">Lo que consulta el asistente</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="2.5" y="3.5" width="13" height="12" rx="2"/><path d="M2.5 7h13M6 2v3M12 2v3"/></svg></span><span><b>Disponibilidad</b><small>Según el programa de reservas</small></span></div>
+      <div class="cal" aria-hidden="true"><b>L</b><b>M</b><b>X</b><b>J</b><b>V</b><b>S</b><b>D</b><span class="dia">8</span><span class="dia" data-en="5.5" data-clase="oc">9</span><span class="dia" data-en="5.5" data-clase="oc">10</span><span class="dia">11</span><span class="dia" data-en="3-8" data-clase="ped">12</span><span class="dia" data-en="5.5" data-clase="oc" data-en-2="3-8" data-clase-2="ped">13</span><span class="dia" data-en="5.5" data-clase="oc" data-en-2="3-8" data-clase-2="ped">14</span><span class="dia" data-en="9.5" data-clase="prop" data-en-2="15" data-clase-2="res">15</span><span class="dia" data-en="9.5" data-clase="prop" data-en-2="15" data-clase-2="res">16</span><span class="dia" data-en="9.5" data-clase="prop" data-en-2="15" data-clase-2="res">17</span><span class="dia">18</span><span class="dia">19</span><span class="dia" data-en="5.5" data-clase="oc">20</span><span class="dia" data-en="5.5" data-clase="oc">21</span><span class="dia">22</span><span class="dia">23</span><span class="dia">24</span><span class="dia">25</span><span class="dia">26</span><span class="dia" data-en="5.5" data-clase="oc">27</span><span class="dia">28</span></div>
+      <p class="ley"><span><i class="l-ped"></i>Lo que pide</span><span><i class="l-oc"></i>Ocupado</span><span><i class="l-prop"></i>Lo que se le propone</span></p>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">La herramienta real</p>
+    <div class="caps cuadricula"><figure class="cap video"><video src="medios/cap-reservas-conversacion.mp4" poster="medios/cap-reservas-conversacion.jpg" width="480" height="912" controls muted playsinline preload="none" aria-label="Una conversación de prueba, grabada tal cual. La persona pide disponibilidad, da sus fechas y recibe las habitaciones libres con su precio."></video><figcaption>Una conversación de prueba, grabada tal cual. La persona pide disponibilidad, da sus fechas y recibe las habitaciones libres con su precio.</figcaption></figure><figure class="cap"><a href="medios/cap-reservas-enlace.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-reservas-enlace.webp" width="740" height="750" alt="Después de enseñar las habitaciones, el asistente envía el enlace para reservar. Lleva ya las fechas y las personas que el cliente ha dicho." loading="lazy"></a><figcaption>Después de enseñar las habitaciones, el asistente envía el enlace para reservar. Lleva ya las fechas y las personas que el cliente ha dicho.</figcaption></figure><figure class="cap"><a href="medios/cap-reservas-prueba.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-reservas-prueba.webp" width="1500" height="905" alt="Una prueba real del asistente. A la derecha, la persona da sus fechas y recibe las habitaciones libres con su precio. A la izquierda, el recorrido de la conversación por dentro." loading="lazy"></a><figcaption>Una prueba real del asistente. A la derecha, la persona da sus fechas y recibe las habitaciones libres con su precio. A la izquierda, el recorrido de la conversación por dentro.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué cambia</p>
+<div class="quien"><p class="antes-l">Quien pregunta por unas fechas quiere saber si hay sitio, no esperar a que alguien lo mire.</p><div class="pers"><div><h2>Para el cliente</h2><p>Recibe una respuesta con la disponibilidad real y un enlace para reservar al momento. Si no hay hueco, le propone otras fechas.</p></div><div><h2>Para el equipo</h2><p>Recibe la solicitud guardada en la ficha y la conversación cuando hace falta una persona.</p></div></div></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Diseñé la conversación y los casos difíciles: fechas ocupadas, mensajes escritos de cualquier manera y paso a una persona.</li><li>Lo conecté con el programa de reservas para que conteste con disponibilidad y precio reales.</li><li>Hice que cada consulta quede guardada en la ficha del cliente.</li><li>Lo probé con guiones de conversación antes de entregarlo.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Zoho SalesIQ · Zoho CRM · Cloudbeds · OpenAI · Python</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="chat-que-entiende.html"><span>Anterior</span><b>Asistente de chat</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="conexion-entre-sistemas.html"><span>Siguiente</span><b>Integración con bancos</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

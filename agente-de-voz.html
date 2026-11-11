@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente de voz · Dennise Domínguez Adrover</title>
+<meta name="description" content="Un asistente que llama por teléfono a quien pide información y deja su ficha rellenada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 1 · Asistente de voz</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Un asistente que llama por teléfono a quien pide información y deja su ficha rellenada.</h1>
+    <p class="acl">Es un programa con voz. Mantiene una conversación corta, hace las preguntas necesarias y apunta las respuestas. Nadie del equipo tiene que marcar el número.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="29" aria-label="Demostración: una llamada del asistente y la ficha que se rellena">
+    <div class="demo-esc">
+
+      <div>
+        <p class="demo-tit">La llamada</p>
+        <div class="panel">
+          <div class="panel-cab">
+            <span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><rect x="5" y="1.5" width="8" height="15" rx="2"/><path d="M8 13.8h2"/></svg></span>
+            <span><b>Marta Ruiz</b><small>Ha pedido información por la web</small></span>
+            <span class="der relevo est" aria-hidden="true">
+              <span data-en="0-1.6">Llamando…</span>
+              <span data-en="1.6-27.6">En llamada</span>
+              <span data-en="27.6">Llamada terminada</span>
+            </span>
+          </div>
+          <div class="voces" aria-hidden="true">
+            <span class="voz" data-en="1.6-4.8 7.2-9.4 12.6-14.6 17.2-20.2 22.8-26"><span class="barras"><i></i><i></i><i></i><i></i></span>Habla el asistente</span>
+            <span class="voz" data-en="5-7 9.6-12.4 14.8-17 20.4-22.6 26.2-27.4"><span class="barras"><i></i><i></i><i></i><i></i></span>Habla Marta</span>
+          </div>
+          <div class="charla">
+            <p class="sonando" data-en="0-1.6" aria-hidden="true"><svg class="dib" viewBox="0 0 44 44"><rect x="15" y="7" width="14" height="30" rx="3.5"/><path d="M20 32h4"/><path class="a" d="M35 15q4 7 0 14"/><path class="a" d="M9 15q-4 7 0 14"/></svg>Llamando a Marta…</p>
+            <div class="turno a" data-en="1.6"><div><p class="boc"><small>Asistente</small>Hola, Marta. Soy el asistente virtual del equipo. Acaba de pedirnos información. ¿Le viene bien hablar un minuto?</p></div></div>
+            <div class="turno c" data-en="5"><div><p class="boc"><small>Marta</small>Sí, ahora me viene bien.</p></div></div>
+            <div class="turno a" data-en="7.2"><div><p class="boc"><small>Asistente</small>Gracias. ¿Qué servicio le interesa?</p></div></div>
+            <div class="turno c" data-en="9.6"><div><p class="boc"><small>Marta</small>Quiero un presupuesto para el mantenimiento de la oficina.</p></div></div>
+            <div class="turno a" data-en="12.6"><div><p class="boc"><small>Asistente</small>¿Para cuándo lo necesitaría?</p></div></div>
+            <div class="turno c" data-en="14.8"><div><p class="boc"><small>Marta</small>Para el mes que viene, si puede ser.</p></div></div>
+            <div class="turno a" data-en="17.2"><div><p class="boc"><small>Asistente</small>¿Prefiere que le escribamos o que le llame una persona del equipo?</p></div></div>
+            <div class="turno c" data-en="20.4"><div><p class="boc"><small>Marta</small>Que me llamen, mejor por la mañana.</p></div></div>
+            <div class="turno a" data-en="22.8"><div><p class="boc"><small>Asistente</small>Le reservo una llamada con Laura mañana a las diez. ¿Le va bien?</p></div></div>
+            <div class="turno c" data-en="26.2"><div><p class="boc"><small>Marta</small>Perfecto, gracias.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="demo-tit">Su ficha, que se rellena sola</p>
+        <div class="panel">
+          <div class="panel-cab">
+            <span class="ico" aria-hidden="true">MR</span>
+            <span><b>Marta Ruiz</b><small>Ficha de cliente</small></span>
+            <span class="der relevo" aria-hidden="true">
+              <span class="pild" data-en="0-5.6">Sin contactar</span>
+              <span class="pild viva" data-en="5.6-27.2">En llamada</span>
+              <span class="pild hecha" data-en="27.2">Cita agendada</span>
+            </span>
+          </div>
+          <dl class="campos">
+            <div><dt>Solicitud</dt><dd><span class="val on">Formulario de la web</span></dd></div>
+            <div><dt>Primer contacto</dt><dd><span class="val nuevo" data-en="5.6">Por teléfono, al momento</span><span class="hueco"></span></dd></div>
+            <div><dt>Le interesa</dt><dd><span class="val nuevo" data-en="10.4">Mantenimiento de oficina</span><span class="hueco"></span></dd></div>
+            <div><dt>Para cuándo</dt><dd><span class="val nuevo" data-en="15.6">El mes que viene</span><span class="hueco"></span></dd></div>
+            <div><dt>Prefiere</dt><dd><span class="val nuevo" data-en="21.2">Que la llamen, por la mañana</span><span class="hueco"></span></dd></div>
+            <div><dt>Cita</dt><dd><span class="val nuevo" data-en="26.8"><b>Mañana a las 10:00, con Laura</b></span><span class="hueco"></span></dd></div>
+          </dl>
+          <p class="aviso" data-en="27.8"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Laura recibe la ficha hecha antes de llamar.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Así es por dentro</p>
+    <div class="caps principal"><figure class="cap"><a href="medios/vivo-voz-flujo-tres-pasos.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-flujo-tres-pasos.webp" width="1125" height="904" alt="El asistente real, visto en ElevenLabs. Cada caja es una parte de la conversación: presentación, preguntas y cierre." loading="lazy"></a><figcaption>El asistente real, visto en ElevenLabs. Cada caja es una parte de la conversación: presentación, preguntas y cierre.</figcaption></figure><figure class="cap"><a href="medios/vivo-voz-flujo-completo.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-flujo-completo.webp" width="1150" height="800" alt="La versión completa, con todos los caminos que puede tomar una llamada." loading="lazy"></a><figcaption>La versión completa, con todos los caminos que puede tomar una llamada.</figcaption></figure><figure class="cap"><a href="medios/vivo-voz-transcripcion.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-transcripcion.webp" width="1120" height="985" alt="El principio de una llamada real, tal como queda escrita." loading="lazy"></a><figcaption>El principio de una llamada real, tal como queda escrita.</figcaption></figure><figure class="cap"><a href="medios/vivo-voz-crm-llamada.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-crm-llamada.webp" width="1000" height="320" alt="La misma llamada, guardada sola en el CRM: el resultado y un resumen de lo que contó el cliente, listo para el gestor." loading="lazy"></a><figcaption>La misma llamada, guardada sola en el CRM: el resultado y un resumen de lo que contó el cliente, listo para el gestor.</figcaption></figure><figure class="cap"><a href="medios/vivo-voz-automatizacion.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-automatizacion.webp" width="1120" height="779" alt="Lo que pasa después de cada llamada, visto en Make. Cada punto es un paso automático: apuntar un dato, decidir el siguiente paso o avisar a alguien." loading="lazy"></a><figcaption>Lo que pasa después de cada llamada, visto en Make. Cada punto es un paso automático: apuntar un dato, decidir el siguiente paso o avisar a alguien.</figcaption></figure><figure class="cap"><a href="medios/vivo-voz-ficha.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/vivo-voz-ficha.webp" width="1484" height="812" alt="La ficha del cliente, con un registro de prueba. Aquí queda apuntado lo que el cliente cuenta en la llamada." loading="lazy"></a><figcaption>La ficha del cliente, con un registro de prueba. Aquí queda apuntado lo que el cliente cuenta en la llamada.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Antes y ahora</p>
+<div class="dos">
+      <div class="antes">
+        <svg class="dib" viewBox="0 0 132 84" aria-hidden="true">
+          <path class="s" d="M6 74h120"/>
+          <circle cx="30" cy="28" r="10"/>
+          <path d="M10 74c0-18 8-26 20-26s20 8 20 26"/>
+          <circle cx="96" cy="42" r="22"/>
+          <path d="M96 29v13l9 6"/>
+        </svg>
+        <h2>Antes</h2>
+        <ul>
+          <li>Una persona del equipo llamaba a cada solicitud, una a una.</li>
+          <li>Solo se podía llamar en horario de oficina.</li>
+          <li>Al colgar, tocaba apuntar los datos en la ficha.</li>
+        </ul>
+      </div>
+      <div class="ahora">
+        <svg class="dib" viewBox="0 0 132 84" aria-hidden="true">
+          <path class="s" d="M6 74h120"/>
+          <rect x="12" y="12" width="34" height="56" rx="6"/>
+          <path d="M25 20h8"/>
+          <path class="a" d="M54 31q6 9 0 18"/>
+          <path class="a" d="M62 25q10 15 0 30"/>
+          <rect x="84" y="18" width="42" height="50" rx="4"/>
+          <path d="M93 31h24M93 41h16"/>
+          <path class="a" d="M93 55l5 5 10-11"/>
+        </svg>
+        <h2>Ahora</h2>
+        <ul>
+          <li>El asistente llama en el momento en que llega la solicitud.</li>
+          <li>Llama también por la tarde y en fin de semana.</li>
+          <li>La persona del equipo recibe la ficha ya hecha.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Diseñé la conversación: qué dice el asistente, qué pregunta y en qué orden.</li><li>Lo conecté con la ficha del cliente para que cada respuesta se guarde en su sitio.</li><li>Lo compruebo con pruebas automáticas antes de cada cambio.</li><li>Reviso las llamadas para corregir lo que no suena natural.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>ElevenLabs · Twilio · Zoho CRM · Make · Python</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="avisos-de-fallos.html"><span>Anterior</span><b>Avisos de fallos</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="chat-que-entiende.html"><span>Siguiente</span><b>Asistente de chat</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generación de facturas · Dennise Domínguez Adrover</title>
+<meta name="description" content="Emitir una factura pasó de ocho pasos a un botón.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 10 · Generación de facturas</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>Emitir una factura pasó de ocho pasos a un botón.</h1>
+    <p class="acl">La persona del equipo pulsa un botón en la ficha del cliente. Los datos se comprueban y la factura se crea sola en Qonto, el banco con el que factura la empresa, sin entrar en él. Después se envía al cliente por correo, queda guardada en su ficha y el equipo recibe un aviso cuando se emite y cuando se paga.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="22.5" aria-label="Demostración: ocho pasos se convierten en un botón que comprueba los datos y emite la factura">
+<div class="demo-esc">
+  <div>
+    <p class="demo-tit">Lo que hace la persona del equipo</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true">MR</span><span><b>Marta Ruiz</b><small>Emitir una factura</small></span></div>
+      <div class="ocho"><p>Antes: ocho pasos entre dos programas</p><ol aria-hidden="true"><li data-en="1.00" data-clase="ido">1</li><li data-en="1.45" data-clase="ido">2</li><li data-en="1.90" data-clase="ido">3</li><li data-en="2.35" data-clase="ido">4</li><li data-en="2.80" data-clase="ido">5</li><li data-en="3.25" data-clase="ido">6</li><li data-en="3.70" data-clase="ido">7</li><li data-en="4.15" data-clase="ido">8</li></ol></div>
+      <div class="uno"><span class="ap" data-en="5.5"><span class="btn" data-en="7.5-8.7">Crear factura</span></span><span class="ap" data-en="5.5">Ahora: un botón en la ficha</span></div>
+      <div class="cuerpo">
+        <div class="lin"><span class="mk" data-en="9.4"><svg class="dib si" viewBox="0 0 12 12" aria-hidden="true"><path class="a" d="M2.5 6.3l2.3 2.3 4.7-5"/></svg><svg class="dib no" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 3.2l5.6 5.6M8.8 3.2l-5.6 5.6"/></svg></span><span>Datos de la factura</span><span class="der ap" data-en="9.4">Completos</span></div>
+        <div class="lin"><span class="mk" data-en="13.2" data-en-2="10.6-13.2" data-clase-2="mal"><svg class="dib si" viewBox="0 0 12 12" aria-hidden="true"><path class="a" d="M2.5 6.3l2.3 2.3 4.7-5"/></svg><svg class="dib no" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 3.2l5.6 5.6M8.8 3.2l-5.6 5.6"/></svg></span><span>Datos del cliente</span><span class="der relevo"><span class="acc" data-en="10.6-13.2">Falta el código postal</span><span data-en="13.2">Corregido</span></span></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="demo-tit">La factura</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><path d="M4.5 2h9v14l-1.5-1-1.5 1-1.5-1-1.5 1-1.5-1-1.5 1z"/><path d="M7 6h4M7 9h4"/></svg></span><span><b>Factura</b><small>A nombre de Marta Ruiz</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-16">Sin emitir</span><span class="pild viva" data-en="16-19.6">Emitida</span><span class="pild hecha" data-en="19.6">Pagada</span></span></div>
+      <div class="mesa"><div class="papel ap" data-en="15">
+        <h4>Factura</h4>
+        <p class="dato"><span>Cliente</span><span>Marta Ruiz</span></p>
+        <p class="dato"><span>Concepto</span><span>Servicio de mantenimiento</span></p>
+        <div class="rg"></div>
+        <div class="rg" style="width:64%"></div>
+        <p class="total"><span>Total</span><span>300 €</span></p>
+        <span class="relevo izq"><span class="sello" data-en="16-19.6">Emitida</span><span class="sello" data-en="19.6">Pagada</span></span>
+      </div></div>
+      <div class="pies">
+        <p class="aviso" data-en="17.4-19.6"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Aviso al equipo: factura emitida.</p>
+        <p class="aviso" data-en="20.2"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>Aviso al equipo: factura pagada.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">La herramienta real</p>
+    <div class="caps cuadricula"><figure class="cap"><a href="medios/cap-facturacion-datos.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-facturacion-datos.webp" width="1400" height="986" alt="La primera parte de la pantalla, con un registro de prueba. Los datos del cliente se comprueban antes de emitir." loading="lazy"></a><figcaption>La primera parte de la pantalla, con un registro de prueba. Los datos del cliente se comprueban antes de emitir.</figcaption></figure><figure class="cap"><a href="medios/cap-facturacion-recorrido.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-facturacion-recorrido.webp" width="1568" height="166" alt="El recorrido automático de una factura, visto en Make: del ingreso reconocido en la ficha a la factura creada en Qonto y enviada por correo." loading="lazy"></a><figcaption>El recorrido automático de una factura, visto en Make: del ingreso reconocido en la ficha a la factura creada en Qonto y enviada por correo.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué cambia</p>
+<div class="frase"><p class="grande"><span>Antes había que copiar los datos del cliente del CRM a Qonto, crear allí la factura, descargarla y enviarla. Ocho pasos entre dos programas.</span> Ahora es un botón en la ficha del cliente.</p><ul><li>Comprueba los datos antes de emitir.</li><li>Crea la factura en Qonto y la deja guardada en la ficha del cliente.</li><li>Avisa cuando la factura se emite y cuando se paga.</li><li>Tiene un manual para quien la usa y otro para quien la mantenga.</li></ul></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Conté los pasos que había que dar y los llevé a una sola pantalla.</li><li>Conecté el CRM con Qonto para que la factura se cree allí sin teclear nada.</li><li>Decidí qué datos se comprueban antes de emitir.</li><li>Añadí los avisos de factura emitida y de factura pagada.</li><li>Escribí los manuales.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Zoho CRM · Qonto · Make</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="contratos-a-firma.html"><span>Anterior</span><b>Generación de contratos</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="sms-con-formulario.html"><span>Siguiente</span><b>SMS con formulario personal</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>

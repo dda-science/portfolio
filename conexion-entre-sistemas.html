@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integración con bancos · Dennise Domínguez Adrover</title>
+<meta name="description" content="La solicitud de un cliente llega al banco con un clic, y la respuesta vuelve al momento. Antes todo iba por correo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=21">
+</head>
+<body>
+<div class="pag"><header class="barra"><a class="marca" href="index.html">Dennise Domínguez Adrover</a><nav aria-label="Principal"><a class="on" href="index.html">Proyectos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav></header></div>
+
+<main class="pag">
+  <header class="cab">
+    <p class="rot"><span>Proyecto 4 · Integración con bancos</span><a href="index.html">Todos los proyectos</a></p>
+    <h1>La solicitud de un cliente llega al banco con un clic, y la respuesta vuelve al momento. Antes todo iba por correo.</h1>
+    <p class="acl">Conecté el programa de la empresa con el del banco. El gestor revisa los datos, pulsa enviar y el banco recibe la solicitud con sus documentos. La respuesta del banco aparece en la misma ficha.</p>
+  </header>
+
+  <section class="demo" data-demo data-duracion="24.5" aria-label="Demostración: una solicitud viaja de la ficha del cliente al banco y vuelve la respuesta">
+<div class="demo-esc tres">
+  <div>
+    <p class="demo-tit">La ficha del cliente</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true">MR</span><span><b>Marta Ruiz</b><small>Ficha de cliente</small></span><span class="der relevo" aria-hidden="true"><span class="pild " data-en="0-14">Sin enviar</span><span class="pild viva" data-en="14-20.6">Enviada</span><span class="pild hecha" data-en="20.6">Admitida</span></span></div>
+      <dl class="campos">
+        <div><dt>Solicitud</dt><dd><span class="val on">Solicitud de financiación</span></dd></div>
+        <div><dt>Documento</dt><dd><span class="val on">12345678Z</span></dd></div>
+        <div><dt>Adjuntos</dt><dd><span class="val on">3 documentos</span></dd></div>
+        <div><dt>Referencia</dt><dd><span class="val nuevo" data-en="14">N.º 000123</span><span class="hueco"></span></dd></div>
+        <div><dt>Respuesta</dt><dd><span class="val nuevo" data-en="20.6"><b>Admitida a trámite</b></span><span class="hueco"></span></dd></div>
+      </dl>
+      <div class="barra-pie"><span class="btn" data-en="2-3.2">Enviar al banco</span><span class="btn" data-en="17-18.2">Consultar estado</span></div>
+    </div>
+  </div>
+  <div class="puente">
+    <h3>Antes de enviar</h3>
+    <p class="chk"><span class="mk" data-en="3.4"><svg class="dib si" viewBox="0 0 12 12" aria-hidden="true"><path class="a" d="M2.5 6.3l2.3 2.3 4.7-5"/></svg><svg class="dib no" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 3.2l5.6 5.6M8.8 3.2l-5.6 5.6"/></svg></span>Datos completos</p>
+    <p class="chk"><span class="mk" data-en="4.6"><svg class="dib si" viewBox="0 0 12 12" aria-hidden="true"><path class="a" d="M2.5 6.3l2.3 2.3 4.7-5"/></svg><svg class="dib no" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 3.2l5.6 5.6M8.8 3.2l-5.6 5.6"/></svg></span>Documento válido</p>
+    <p class="chk"><span class="mk" data-en="5.8"><svg class="dib si" viewBox="0 0 12 12" aria-hidden="true"><path class="a" d="M2.5 6.3l2.3 2.3 4.7-5"/></svg><svg class="dib no" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 3.2l5.6 5.6M8.8 3.2l-5.6 5.6"/></svg></span>Documentación adjunta</p>
+    <div><div class="via" data-en="7.5-11.5 17.4-19"><i></i></div><p class="via-t"><span>Solicitud y documentos</span><span aria-hidden="true">→</span></p></div>
+    <div><div class="via vuelta" data-en="12-16.5 19-26"><i></i></div><p class="via-t"><span aria-hidden="true">←</span><span>Respuesta</span></p></div>
+  </div>
+  <div>
+    <p class="demo-tit">El sistema del banco</p>
+    <div class="panel">
+      <div class="panel-cab"><span class="ico" aria-hidden="true"><svg class="dib" viewBox="0 0 18 18"><path d="M3.5 15.5v-11l5.5-2 5.5 2v11z"/><path d="M7 7h1M10 7h1M7 10h1M10 10h1M8 15.5v-2.5h2v2.5"/></svg></span><span><b>El banco</b><small>Su sistema, no el nuestro</small></span></div>
+      <dl class="campos">
+        <div><dt>Solicitud</dt><dd><span class="val nuevo" data-en="9.6">Solicitud de financiación</span><span class="hueco"></span></dd></div>
+        <div><dt>Documento</dt><dd><span class="val nuevo" data-en="10.1">12345678Z</span><span class="hueco"></span></dd></div>
+        <div><dt>Adjuntos</dt><dd><span class="val nuevo" data-en="10.6">3 documentos</span><span class="hueco"></span></dd></div>
+        <div><dt>Estado</dt><dd><span class="val" data-en="11.4-19">Recibida</span><span class="val" data-en="19"><b>Admitida a trámite</b></span><span class="hueco"></span></dd></div>
+      </dl>
+      <p class="aviso" data-en="21.6"><svg class="dib" viewBox="0 0 16 16" aria-hidden="true"><circle class="a" cx="8" cy="8" r="6.6"/><path class="a" d="M5 8.2l2.1 2.1L11 6.2"/></svg>La respuesta vuelve a la ficha, explicada con palabras normales.</p>
+    </div>
+  </div>
+</div>
+    <div class="mandos">
+      <button type="button" data-accion="alternar" aria-label="Pausa la demostración">
+        <svg class="dib i-pau" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 3v8M9.5 3v8"/></svg>
+        <svg class="dib i-rep" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 2.8v8.4l6.5-4.2z"/></svg>
+        <span data-texto>Pausa</span>
+      </button>
+      <button type="button" data-accion="repetir">
+        <svg class="dib" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.6 7a4.4 4.4 0 1 0 1.5-3.3"/><path d="M2.4 1.8v2.4h2.4"/></svg>
+        Repetir
+      </button>
+      <div class="prog" data-progreso role="progressbar" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">La herramienta real</p>
+    <div class="caps cuadricula"><figure class="cap"><a href="medios/cap-conexion-solicitud.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-conexion-solicitud.webp" width="1568" height="678" alt="La pantalla desde la que el gestor revisa y envía la solicitud, con un registro de prueba. A la derecha, los pasos ya dados y el aviso de que los datos son correctos." loading="lazy"></a><figcaption>La pantalla desde la que el gestor revisa y envía la solicitud, con un registro de prueba. A la derecha, los pasos ya dados y el aviso de que los datos son correctos.</figcaption></figure><figure class="cap"><a href="medios/cap-conexion-documentacion.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-conexion-documentacion.webp" width="1212" height="880" alt="El envío de documentos al banco. Arriba se ve en qué paso está la solicitud y debajo lo que ya se ha enviado." loading="lazy"></a><figcaption>El envío de documentos al banco. Arriba se ve en qué paso está la solicitud y debajo lo que ya se ha enviado.</figcaption></figure><figure class="cap"><a href="medios/cap-conexion-b-condiciones.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-conexion-b-condiciones.webp" width="1800" height="878" alt="El segundo banco. El gestor pide condiciones y las recibe al momento en la misma pantalla, con la cuota y el tipo de interés." loading="lazy"></a><figcaption>El segundo banco. El gestor pide condiciones y las recibe al momento en la misma pantalla, con la cuota y el tipo de interés.</figcaption></figure><figure class="cap"><a href="medios/cap-conexion-b-lanzamiento.webp" data-ampliar aria-label="Ampliar la captura"><img src="medios/cap-conexion-b-lanzamiento.webp" width="1600" height="1200" alt="El segundo paso con ese banco: las condiciones recibidas y los gastos estimados, antes de enviar la documentación." loading="lazy"></a><figcaption>El segundo paso con ese banco: las condiciones recibidas y los gastos estimados, antes de enviar la documentación.</figcaption></figure></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué cambia</p>
+<div class="frase"><p class="grande"><span>Antes, el gestor lo hacía todo por correo: escribía al banco, adjuntaba los documentos uno a uno y esperaba la respuesta, a veces durante días.</span> Ahora envía la solicitud desde la ficha del cliente y ahí mismo ve la respuesta.</p><ul><li>Avisa antes de enviar si falta un dato o algo no cumple lo que pide el banco.</li><li>Explica la respuesta del banco con palabras normales.</li><li>Si el banco la rechaza, se corrige y se reenvía sin pedir otra firma al cliente.</li></ul></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rot">Qué hice yo</p>
+    <ol class="hice"><li>Estudié la documentación técnica del banco y construí la conexión entre su sistema y el de la empresa.</li><li>Diseñé las pantallas que usa el equipo: enviar, ver qué documentación falta, consultar el estado y recuperar una solicitud rechazada.</li><li>Preparé un simulador para probar cada cambio sin enviar nada de verdad.</li><li>Escribí la guía para el equipo y dejé preparada la renovación anual del acceso.</li></ol>
+    <div class="fichas-p">
+      <p><b>Hecho con</b>Cloudflare Workers · JavaScript · Zoho CRM · Zoho Sign</p>
+    </div>
+  </section>
+
+  <nav class="paso" aria-label="Otros proyectos">
+    <a href="asistente-de-reservas.html"><span>Anterior</span><b>Asistente de reservas</b></a>
+    <a class="idx" href="index.html"><span>Índice</span><b>Todos los proyectos</b></a>
+    <a href="plantillas-de-whatsapp.html"><span>Siguiente</span><b>Envío de plantillas de WhatsApp</b></a>
+  </nav>
+</main>
+
+<footer><div class="pag"><span>Dennise Domínguez Adrover · Automatización e IA · En remoto</span><span><a href="mailto:dennisedominguezadrover@gmail.com" data-copiar>Correo</a><a href="https://www.linkedin.com/in/dennise-d-385346124/" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+<script src="pasos.js?v=21"></script>
+</body>
+</html>
