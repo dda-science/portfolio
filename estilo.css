@@ -628,3 +628,10 @@ b.ok { font-weight:600; color:var(--acc); }
 .bot { display:inline-block; line-height:1.2; }
 .mas { padding-bottom:24px; }
 .mas .p-bot { margin-top:4px; }
+
+/* Herramientas */
+.stk { border-top:1px solid var(--rule); }
+.stk div { display:grid; grid-template-columns:minmax(0,15rem) minmax(0,1fr); gap:6px 32px; padding:14px 0; border-bottom:1px solid var(--rule); }
+.stk dt { font-family:var(--sans); font-size:13px; font-weight:600; letter-spacing:.04em; color:var(--ink); }
+.stk dd { margin:0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
+@media (max-width:700px) { .stk div { grid-template-columns:1fr; } }
