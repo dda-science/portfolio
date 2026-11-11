@@ -104,11 +104,11 @@
     this.raiz.setAttribute('data-estado', estado);
     this.raiz.classList.toggle('en-pausa', estado !== 'marcha');
     if (this.botonAlternar) {
-      var EN = document.documentElement.lang === 'en';
-      var rotulo = estado === 'marcha' ? (EN ? 'Pause' : 'Pausa') : (EN ? 'Play' : 'Reproducir');
+      var L = document.documentElement.lang, EN = L === 'en', CA = L === 'ca';
+      var rotulo = estado === 'marcha' ? (EN ? 'Pause' : 'Pausa') : (EN ? 'Play' : CA ? 'Reprodueix' : 'Reproducir');
       var hueco = this.botonAlternar.querySelector('[data-texto]');
       if (hueco) hueco.textContent = rotulo;
-      this.botonAlternar.setAttribute('aria-label', rotulo + (EN ? ' the demo' : ' la demostración'));
+      this.botonAlternar.setAttribute('aria-label', rotulo + (EN ? ' the demo' : CA ? ' la demostració' : ' la demostración'));
     }
   };
 
@@ -216,7 +216,7 @@
     var capa = document.createElement('button');
     capa.id = 'vis';
     capa.type = 'button';
-    capa.setAttribute('aria-label', document.documentElement.lang === 'en' ? 'Close the enlarged image' : 'Cerrar la imagen ampliada');
+    capa.setAttribute('aria-label', ({en:'Close the enlarged image',ca:'Tanca la imatge ampliada'})[document.documentElement.lang] || 'Cerrar la imagen ampliada');
     var img = document.createElement('img');
     img.alt = '';
     capa.appendChild(img);
@@ -254,6 +254,6 @@ document.addEventListener('click', function (e) {
   if (!a) return;
   var dir = a.getAttribute('href').replace('mailto:', '');
   var antes = a.textContent;
-  var avisar = function () { a.textContent = (document.documentElement.lang === 'en' ? 'Address copied: ' : 'Dirección copiada: ') + dir; setTimeout(function () { a.textContent = antes; }, 3500); };
+  var avisar = function () { a.textContent = (({en:'Address copied: ',ca:'Adreça copiada: '})[document.documentElement.lang] || 'Dirección copiada: ') + dir; setTimeout(function () { a.textContent = antes; }, 3500); };
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(dir).then(avisar, avisar); else avisar();
 });

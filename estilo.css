@@ -679,3 +679,9 @@ main { padding-bottom:72px; }
 .p-que b { margin-bottom:6px; }
 .p-que .n { margin-top:0; }
 .p-foto { margin-bottom:24px; }
+
+/* Selector de idioma ES · CA · EN */
+.barra nav .idiomas { display:flex; gap:12px; align-items:center; border-left:1px solid var(--rule); padding-left:18px; }
+.barra nav .idiomas .idioma { border-left:0; padding-left:0; font-weight:600; letter-spacing:.06em; color:var(--soft); }
+.barra nav .idiomas .idioma:hover { color:var(--acc); }
+.barra nav .idiomas .idioma.on { color:var(--acc); padding:21px 0 19px; border-bottom:2px solid var(--acc); }
