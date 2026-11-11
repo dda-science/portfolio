@@ -635,3 +635,11 @@ b.ok { font-weight:600; color:var(--acc); }
 .stk dt { font-family:var(--sans); font-size:13px; font-weight:600; letter-spacing:.04em; color:var(--ink); }
 .stk dd { margin:0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
 @media (max-width:700px) { .stk div { grid-template-columns:1fr; } }
+
+/* Franja de herramientas en la portada */
+.p-herr { grid-column:1/-1; margin:0 0 30px; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--sans); font-size:14.5px; line-height:1.7; color:var(--soft); }
+.p-herr b { font-weight:600; color:var(--ink); margin-right:12px; letter-spacing:.02em; }
+.p-herr a { margin-left:10px; color:var(--acc); font-weight:600; white-space:nowrap; }
+.p-foto img { background:#e9e0d4; }
+
+.barra nav a.idioma { font-weight:600; letter-spacing:.06em; color:var(--acc); border-left:1px solid var(--rule); padding-left:18px; }
