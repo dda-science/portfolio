@@ -685,3 +685,20 @@ main { padding-bottom:72px; }
 .barra nav .idiomas .idioma { border-left:0; padding-left:0; font-weight:600; letter-spacing:.06em; color:var(--soft); }
 .barra nav .idiomas .idioma:hover { color:var(--acc); }
 .barra nav .idiomas .idioma.on { color:var(--acc); padding:21px 0 19px; border-bottom:2px solid var(--acc); }
+
+/* Anterior / siguiente, tamaño contenido */
+.paso { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.paso > a:first-child, .paso > a:last-child { flex:0 1 auto; max-width:40%; padding:12px 18px 13px; border-radius:6px; }
+.paso > a:first-child span, .paso > a:last-child span { font-size:12px; margin-bottom:2px; }
+.paso b { font-size:18px; }
+.paso .idx { flex:0 0 auto; padding:0; }
+.paso .idx b { font-size:15px; font-family:var(--sans); font-weight:500; }
+.paso a:focus-visible { outline-offset:4px; }
+@media (max-width:900px) {
+  .paso { flex-wrap:wrap; }
+  .paso > a:first-child, .paso > a:last-child { max-width:48%; }
+  .paso .idx { order:3; width:100%; text-align:center; }
+  .paso b { font-size:16px; }
+}
+@media (max-width:900px) { .paso { gap:12px 10px; } .paso > a:first-child, .paso > a:last-child { max-width:calc(50% - 5px); flex:1 1 calc(50% - 5px); } }
+@media (max-width:900px) { main { padding-bottom:48px; } }
