@@ -646,3 +646,4 @@ b.ok { font-weight:600; color:var(--acc); }
 /* Resultado de cada proyecto, destacado */
 .fichas-p .res { display:block; margin:0 0 22px; padding:18px 22px; background:var(--tint); border-left:3px solid var(--acc); font-family:var(--serif); font-size:20px; line-height:1.45; color:var(--ink); max-width:46rem; }
 .fichas-p .res b { display:block; font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--acc); margin:0 0 6px; }
+.cap img { width:100%; height:auto; }
