@@ -672,3 +672,10 @@ main { padding-bottom:72px; }
 .tarj.dest .ver { margin-top:12px; font-size:14px; }
 .dests { gap:18px; }
 @media (max-width:900px) { .tarj.dest { grid-template-columns:1fr; } .tarj.dest .tapa { max-height:180px; } }
+
+/* Destacado dentro de su grupo, a todo el ancho */
+.grupo .tapas li.ancho { grid-column:1 / -1; }
+.grupo .tarj.dest .rot { margin:0 0 8px; }
+.p-que b { margin-bottom:6px; }
+.p-que .n { margin-top:0; }
+.p-foto { margin-bottom:24px; }
