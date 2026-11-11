@@ -643,3 +643,6 @@ b.ok { font-weight:600; color:var(--acc); }
 .p-foto img { background:#e9e0d4; }
 
 .barra nav a.idioma { font-weight:600; letter-spacing:.06em; color:var(--acc); border-left:1px solid var(--rule); padding-left:18px; }
+/* Resultado de cada proyecto, destacado */
+.fichas-p .res { display:block; margin:0 0 22px; padding:18px 22px; background:var(--tint); border-left:3px solid var(--acc); font-family:var(--serif); font-size:20px; line-height:1.45; color:var(--ink); max-width:46rem; }
+.fichas-p .res b { display:block; font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--acc); margin:0 0 6px; }
